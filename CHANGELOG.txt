@@ -1,0 +1,1 @@
+For the consistency, all the font of the text are in Calibri, including headings. And the font size of homepage is the same as blog page. The background colour of heading is #cda30f (yellow) now, because it should be the same as logo's colour. The background colour of navigetion bar is #1e3231 (deep green) now, in order to show the content in white colour clearly. 

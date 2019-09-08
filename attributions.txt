@@ -1,0 +1,21 @@
+The logo image is used from launchaco.com
+(https://www.launchaco.com/logo/editor); accessed on 21 Oct. 2018
+
+The blog images are placeholder images used from placeimg.com 
+placeimg_210_225_nature.jpg, (http://placeimg.com/210/225/nature); accessed on 21 Oct. 2018
+placeimg_210_225_arch.jpg, (http://placeimg.com/210/225/arch); accessed on 21 Oct. 2018
+placeimg_210_225_animals.jpg, (http://placeimg.com/210/225/animals); accessed on 21 Oct. 2018
+placeimg_210_225_arch1.jpg, (http://placeimg.com/210/225/arch); accessed on 21 Oct. 2018
+placeimg_360_240_people.jpg, (http://placeimg.com/360/240/people); accessed on 21 Oct. 2018, 
+placeimg_360_240_animals.jpg, (http://placeimg.com/360/240/animals); accessed on 4 Dec. 2018, 
+placeimg_360_240_arch.jpg, (http://placeimg.com/360/240/arch); accessed on 4 Dec. 2018, 
+placeimg_360_240_nature.jpg, (http://placeimg.com/360/240/nature); accessed on 4 Dec. 2018, 
+placeimg_360_240_tech.jpg, (http://placeimg.com/360/240/tech); accessed on 4 Dec. 2018, 
+placeimg_360_240_animals1.jpg, (http://placeimg.com/360/240/animals); accessed on 4 Dec. 2018, 
+placeimg_360_240_arch1.jpg, (http://placeimg.com/360/240/arch); accessed on 4 Dec. 2018, 
+placeimg_360_240_people1.jpg, (http://placeimg.com/360/240/people); accessed on 4 Dec. 2018,
+placeimg_360_240_nature1.jpg, (http://placeimg.com/360/240/nature); accessed on 4 Dec. 2018, 
+placeimg_360_240_tech1.jpg, (http://placeimg.com/360/240/tech); accessed on 4 Dec. 2018,
+
+The contents are dummy text used from lipsum.com
+(https://www.lipsum.com/feed/html); accessed on 21 Oct. 2018

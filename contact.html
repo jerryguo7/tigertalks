@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tiger Talks - Contact Us</title>
+    <!--
+        Normalize.css
+        GitHub (2018), A modern, HTML5-ready alternative to CSS resets
+        URL: https://necolas.github.io/normalize.css/
+        Date accessed: Nov 25, 2018
+    -->
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <!--Use the stylesheet to style the whole page-->
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+
+<body>
+    <header>
+        <!--This logo can link to the home page-->
+        <a href="index.html"><img id="logo" src="images/tigertalkslogo.png" alt="Nice logo" /></a>
+        <!--Use the stylesheet to style the search button-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!--The search bar links to Google search-->
+        <form id="search" style="margin-left: 8%; width: 40%" method="get" action="http://www.google.com/search">
+            <input placeholder="What do you want to see?" name="q" size="25" maxlength="255" value="" />
+            <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+        <!--Language options on the top right side-->
+        <div class="languages">
+            <button class="dropdown">Language</button>
+            <div class="languages-options">
+                <ul>
+                    <li><a href="#">Français</a></li>
+                    <li><a href="#">Mi'kmaq</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!--General navigation bar-->
+    <nav class="navigation">
+        <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#">Students</a></li>
+            <li><a href="#">Study</a></li>
+            <li><a href="#">Campus</a></li>
+            <li><a href="#">Life</a></li>
+            <li><a href="#">Entertainment</a></li>
+            <li><a href="#">Opportunities</a></li>
+            <li><a href="#">Explore</a></li>
+            <li><a href="#">Health & Wellness</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <!--Mobile navigation bar-->
+    <!--Click the navigation button, all the navigation options will show up-->
+    <button id="drop-button" class = "expandable" onclick="mobile()">Navigation</button>
+    <div class="hidden" id="navOfMobile">
+        <nav class="mobileNav" > 
+            <ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#">Students</a></li>
+                <li><a href="#">Study</a></li>
+                <li><a href="#">Campus</a></li>
+                <li><a href="#">Life</a></li>
+                <li><a href="#">Entertainment</a></li>
+                <li><a href="#">Opportunities</a></li>
+                <li><a href="#">Explore</a></li>
+                <li><a href="#">Health & Wellness</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul> 
+        </nav>
+    </div>
+    <div class="main-container">
+        <!--Use breadcrumb to help users on the track-->
+        <ul class="breadcrumb">
+            <li><a href="index.html">Home</a></li>
+            <li>Contact Us</li>
+        </ul>
+        <h2 style="text-align:center;">Contact Us!</h2>
+        <div class="main-post">
+            <article>
+                <div style="width: 50%; float: left;">
+                    <h3>Phone Numer</h3>
+                    <p>1-000-111-2222</p>
+                    <h3>E-mail Address</h3>
+                    <!--Make the email address clickable-->
+                    <a class = "readMore" href="mailto:abc@abc.com">abc@abc.com</a><br>
+                    <p>&nbsp;</p>
+                </div>
+                <div style="width: 50%; float: left;">
+                    <h3>Fax Number</h3>
+                    <p>1-333-444-5555</p>
+                    <h3>Location</h3>
+                    Tiger Talks Office<br>
+                    Anywhere<br>
+                    Halifax, Nova Scotia<br>
+                </div>
+            </article>
+            
+            <!-- Contact Form -->
+            <section id="msgarea">
+                <h2 style="text-align: center;">Contact Form</h2>
+                <form action = "#" method="get" onsubmit="return false;">
+                <!-- Name -->
+                <div>
+                    <label><strong>Name</strong>&nbsp;</label>
+                </div>
+                    <input type="text" name="firstName" id="name" size="35">           
+                <!-- E-mail -->
+                <div>
+                    <label><strong>E-mail</strong>&nbsp;</label>
+                </div>
+                    <input type="text" name="searchField" id="email" size="35">
+                <!-- Message -->
+                <div>
+                    <label><strong>Phone Number</strong>&nbsp;</label>
+                </div>
+                    <input type="text" name="searchField" id="phoneNumber" size="35">
+                <div>
+                    <label><strong>Message</strong>&nbsp;</label>
+                </div>
+                    <textarea id="message" name=“message” style="resize: none;" rows="15" cols="43"></textarea>
+                <!-- Submit and clear buttons -->
+                <div>                  
+                    <!-- If the message is successfully submitted, all the information will be cleared after clicking "OK" of the alert message-->
+                    <button id="submit" onclick="submitInfo()" >Submit</button>
+                    <button id="clear" onclick="clearInfo()">Clear</button>
+                </div>   
+                </form>
+            </section> 
+
+        </div>
+        <!--Put the links aside-->
+            <div class="links">
+                <aside>              
+                    <p class = "expandable" onclick="school()" style="text-align: center;">Useful Links!</p>
+                    <div class="hidden" id="option">
+                        <ul>
+                            <li><a href="http://www.dal.ca">Dalhousie University</a>
+                            <li><a href="http://www.facebook.com">Facebook</a>
+                            <li><a href="http://twitter.com">Twitter</a>
+                            <li><a href="http://www.instagram.com">Instagram</a>
+                            <li><a href="http://www.pinterest.ca">Pinterest</a>
+                        </ul>
+                    </div>
+                </aside>
+            </div>
+    </div>
+    <footer>
+        <p>&copy; Tiger Talks, Halifax, Nova Scotia.</p>
+    </footer>
+    <script src="scripts/message.js"></script>
+    <script src="scripts/responsive.js"></script> 
+</body>
+
+</html>

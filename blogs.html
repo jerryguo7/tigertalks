@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tiger Talks - Blog page</title>
+    <!--
+        Normalize.css
+        GitHub (2018), A modern, HTML5-ready alternative to CSS resets
+        URL: https://necolas.github.io/normalize.css/
+        Date accessed: Nov 25, 2018
+    -->
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <!--Use the stylesheet to style the whole page-->
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+
+<body>
+    <header>
+        <!--This logo can link to the home page-->
+        <a href="index.html"><img id="logo" src="images/tigertalkslogo.png" alt="Nice logo" /></a>
+        <!--Use the stylesheet to style the search button-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!--The search bar links to Google search-->
+        <form id="search" style="margin-left: 8%; width: 40%" method="get" action="http://www.google.com/search">
+            <input placeholder="What do you want to see?" name="q" size="25" maxlength="255" value="" />
+            <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+        <!--Language options on the top right side-->
+        <div class="languages">
+            <button class="dropdown">Language</button>
+            <div class="languages-options">
+                <ul>
+                    <li><a href="#">Français</a></li>
+                    <li><a href="#">Mi'kmaq</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!--General navigation bar-->
+    <nav class="navigation">
+        <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#">Students</a></li>
+            <li><a href="#">Study</a></li>
+            <li><a href="#">Campus</a></li>
+            <li><a href="#">Life</a></li>
+            <li><a href="#">Entertainment</a></li>
+            <li><a href="#">Opportunities</a></li>
+            <li><a href="#">Explore</a></li>
+            <li><a href="#">Health & Wellness</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <!--Mobile navigation bar-->
+    <!--Click the navigation button, all the navigation options will show up-->
+    <button id="drop-button" class = "expandable" onclick="mobile()">Navigation</button>
+    <div class="hidden" id="navOfMobile">
+        <nav class="mobileNav" > 
+            <ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#">Students</a></li>
+                <li><a href="#">Study</a></li>
+                <li><a href="#">Campus</a></li>
+                <li><a href="#">Life</a></li>
+                <li><a href="#">Entertainment</a></li>
+                <li><a href="#">Opportunities</a></li>
+                <li><a href="#">Explore</a></li>
+                <li><a href="#">Health & Wellness</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul> 
+        </nav>
+    </div>
+    <div class="main-container">
+        <!--Use breadcrumb to help users on the track-->
+        <ul class="breadcrumb">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Entertainment</a></li>
+            <li>Blog Post Data</li>
+        </ul>
+        <div class="main-post">
+            <!-- Display the blog content from JSON -->
+            <article>
+                <div id="one">
+                    <h2 id = "heading1">0</h2>
+                    <p id = "date1"></p>
+                    <p id = "person1" class = "person"></p>
+                    <!-- 
+                    The image is from:                  
+                    PlaceIMG: http://placeimg.com/360/240/people
+                    -->
+                    <img class="blogImg" src="images/placeimg_360_240_people.jpg" alt="blogImage">
+                    <p id = "paragraph1"></p>
+               </div>
+               <div id="two">
+                    <h2 id = "heading2">0</h2>
+                    <p id = "date2"></p>
+                    <p id = "person2" class = "person"></p>
+                    <!-- 
+                    The image is from:                  
+                    PlaceIMG: http://placeimg.com/360/240/animals
+                    -->
+                    <img class="blogImg" src="images/placeimg_360_240_animals.jpg" alt="blogImage">
+                    <p id = "paragraph2"></p>
+               </div>
+               <div id="three">
+                    <h2 id = "heading3">0</h2>
+                    <p id = "date3"></p>
+                    <p id = "person3" class = "person"></p>
+                    <!-- 
+                    The image is from:                  
+                    PlaceIMG: http://placeimg.com/360/240/arch
+                    -->
+                    <img class="blogImg" src="images/placeimg_360_240_arch.jpg" alt="blogImage">
+                    <p id = "paragraph3"></p>
+               </div>
+               <div id="four">
+                    <h2 id = "heading4">0</h2>
+                    <p id = "date4"></p>
+                    <p id = "person4" class = "person"></p>
+                    <!-- 
+                    The image is from:                  
+                    PlaceIMG: http://placeimg.com/360/240/nature
+                    -->
+                    <img class="blogImg" src="images/placeimg_360_240_nature.jpg" alt="blogImage">
+                    <p id = "paragraph4"></p>
+               </div>
+               <div id="five">
+                    <h2 id = "heading5">0</h2>
+                    <p id = "date5"></p>
+                    <p id = "person5" class = "person"></p>
+                    <!-- 
+                    The image is from:                  
+                    PlaceIMG: http://placeimg.com/360/240/tech
+                    -->
+                    <img class="blogImg" src="images/placeimg_360_240_tech.jpg" alt="blogImage">
+                    <p id = "paragraph5"></p>
+               </div>
+               <div id="six">
+                    <h2 id = "heading6">0</h2>
+                    <p id = "date6"></p>
+                    <p id = "person6" class = "person"></p>
+                    <!-- 
+                    The image is from:                  
+                    PlaceIMG: http://placeimg.com/360/240/animals
+                    -->
+                    <img class="blogImg" src="images/placeimg_360_240_animals1.jpg" alt="blogImage">
+                    <p id = "paragraph6"></p>
+               </div>
+               <div id="seven">
+                    <h2 id = "heading7">0</h2>
+                    <p id = "date7"></p>
+                    <p id = "person7" class = "person"></p>
+                    <!-- 
+                    The image is from:                  
+                    PlaceIMG: http://placeimg.com/360/240/arch
+                    -->
+                    <img class="blogImg" src="images/placeimg_360_240_arch1.jpg" alt="blogImage">
+                    <p id = "paragraph7"></p>
+               </div>
+               <div id="eight">
+                    <h2 id = "heading8">0</h2>
+                    <p id = "date8"></p>
+                    <p id = "person8" class = "person"></p>
+                    <!-- 
+                    The image is from:                  
+                    PlaceIMG: http://placeimg.com/360/240/people
+                    -->
+                    <img class="blogImg" src="images/placeimg_360_240_people1.jpg" alt="blogImage">
+                    <p id = "paragraph8"></p>
+               </div>
+               <div id="nine">
+                    <h2 id = "heading9">0</h2>
+                    <p id = "date9"></p>
+                    <p id = "person9" class = "person"></p>
+                    <!-- 
+                    The image is from:                  
+                    PlaceIMG: http://placeimg.com/360/240/nature
+                    -->
+                    <img class="blogImg" src="images/placeimg_360_240_nature1.jpg" alt="blogImage">
+                    <p id = "paragraph9"></p>
+               </div>
+                <div id="ten">
+                    <h2 id = "heading10">0</h2>
+                    <p id = "date10"></p>
+                    <p id = "person10" class = "person"></p>
+                    <!-- 
+                    The image is from:                  
+                    PlaceIMG: http://placeimg.com/360/240/tech
+                    -->
+                    <img class="blogImg" src="images/placeimg_360_240_tech1.jpg" alt="blogImage">
+                    <p id = "paragraph10"></p>
+               </div>
+            </article>
+        </div>
+        <!--Put the links aside-->
+            <div class="links">
+                <aside>              
+                    <p class = "expandable" onclick="school()" style="text-align: center;">Useful Links!</p>
+                    <div class="hidden" id="option">
+                        <ul>
+                            <li><a href="http://www.dal.ca">Dalhousie University</a>
+                            <li><a href="http://www.facebook.com">Facebook</a>
+                            <li><a href="http://twitter.com">Twitter</a>
+                            <li><a href="http://www.instagram.com">Instagram</a>
+                            <li><a href="http://www.pinterest.ca">Pinterest</a>
+                        </ul>
+                    </div>
+                </aside>
+            </div>
+    </div>
+    <footer>
+        <p>&copy; Tiger Talks, Halifax, Nova Scotia.</p>
+    </footer>
+    <script src="scripts/json.js"></script>
+    <script src="scripts/blogText.js"></script>
+    <script src="scripts/responsive.js"></script> 
+</body>
+
+</html>

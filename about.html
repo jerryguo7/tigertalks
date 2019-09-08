@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tiger Talks - About</title>
+    <!--
+        Normalize.css
+        GitHub (2018), A modern, HTML5-ready alternative to CSS resets
+        URL: https://necolas.github.io/normalize.css/
+        Date accessed: Nov 25, 2018
+    -->
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <!--Use the stylesheet to style the whole page-->
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+
+<body>
+    <header>
+        <!--This logo can link to the home page-->
+        <a href="index.html"><img id="logo" src="images/tigertalkslogo.png" alt="Nice logo" /></a>
+        <!--Use the stylesheet to style the search button-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!--The search bar links to Google search-->
+        <form id="search" style="margin-left: 8%; width: 40%" method="get" action="http://www.google.com/search">
+            <input placeholder="What do you want to see?" name="q" size="25" maxlength="255" value="" />
+            <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+        <!--Language options on the top right side-->
+        <div class="languages">
+            <button class="dropdown">Language</button>
+            <div class="languages-options">
+                <ul>
+                    <li><a href="#">Français</a></li>
+                    <li><a href="#">Mi'kmaq</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!--General navigation bar-->
+    <nav class="navigation">
+        <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#">Students</a></li>
+            <li><a href="#">Study</a></li>
+            <li><a href="#">Campus</a></li>
+            <li><a href="#">Life</a></li>
+            <li><a href="#">Entertainment</a></li>
+            <li><a href="#">Opportunities</a></li>
+            <li><a href="#">Explore</a></li>
+            <li><a href="#">Health & Wellness</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <!--Mobile navigation bar-->
+    <!--Click the navigation button, all the navigation options will show up-->
+    <button id="drop-button" class = "expandable" onclick="mobile()">Navigation</button>
+    <div class="hidden" id="navOfMobile">
+        <nav class="mobileNav" > 
+            <ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#">Students</a></li>
+                <li><a href="#">Study</a></li>
+                <li><a href="#">Campus</a></li>
+                <li><a href="#">Life</a></li>
+                <li><a href="#">Entertainment</a></li>
+                <li><a href="#">Opportunities</a></li>
+                <li><a href="#">Explore</a></li>
+                <li><a href="#">Health & Wellness</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul> 
+        </nav>
+    </div>
+
+    <div class="main-container">
+        <!--Use breadcrumb to help users on the track-->
+        <ul class="breadcrumb">
+            <li><a href="index.html">Home</a></li>
+            <li>About</li>
+        </ul>
+    <section>
+        <h2 style="text-align:center;">About Tiger Talks</h2>        
+        <div class="main-post">
+            <!--The content is from Users.pdf in project proposal-->
+            <article>
+                <h3>This website is supposed to talk about the tiger.</h3>
+                <p>This website, Tiger Talks, is a blogging website which mostly services for the people in Dalhousie University in Halifax, Nova Scotia. In this blogging website, most topics are talking about things that happen in the school. Simultaneously, the topics in this blogging website is broad, such as students, study, campus, life, entertainment, opportunities, explore health & wellness and so on. For students, students service can be the first one because it can help for all the students generally. Also, there will be two more categories, new students and international students, because those students may need more help than current students. For study, there will be a category called “academics” for the general academics. Moreover, there will be “study tips” to provide extra help. Students not only want to find help academically, but also want to find help about opportunities for the future career life. Therefore, “opportunities” will include “career & leadership” and “volunteering”. This website can also help staff in the school, such as professors. Because they need to know what students think. In conclusion, this blogging website can provide many kinds of help for different people in this school.</p>               
+            </article>
+        </div>
+    </section>
+        <!--Put the links aside-->
+        <div class="links">
+                <aside>              
+                    <p class = "expandable" onclick="school()" style="text-align: center;">Useful Links!</p>
+                    <div class="hidden" id="option">
+                        <ul>
+                            <li><a href="http://www.dal.ca">Dalhousie University</a>
+                            <li><a href="http://www.facebook.com">Facebook</a>
+                            <li><a href="http://twitter.com">Twitter</a>
+                            <li><a href="http://www.instagram.com">Instagram</a>
+                            <li><a href="http://www.pinterest.ca">Pinterest</a>
+                        </ul>
+                    </div>
+                </aside>
+            </div>
+            <div class="left-container">
+                <h3>Tiger Talks Rock!</h3>
+                <!-- 
+                    The image is from:                  
+                    PlaceIMG: http://placeimg.com/210/225/animals
+                -->
+                <img id="studentsImg" src="images/placeimg_210_225_animals.jpg" alt="students">
+                <!-- 
+                    The content is from:                    
+                    Lorem Ipsum: https://www.lipsum.com/feed/html
+                    -->
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In quis turpis eu lectus mollis lacinia. Fusce purus ipsum, finibus et turpis vitae, tempor imperdiet odio. Etiam nisi dui, scelerisque sed ex vitae, dictum blandit nisl. Proin turpis purus, condimentum nec accumsan hendrerit, lacinia sed neque. Aenean vitae pretium orci. Vivamus sodales sapien est, accumsan facilisis quam tempor ac.Sed non leo in neque varius pharetra nec in nisl. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+            </div>
+            <div class="right-container">
+                <h3>Things You Can Do Here</h3>
+                <!-- 
+                    The image is from:                  
+                    PlaceIMG: http://placeimg.com/210/225/arch
+                -->
+                <img id="studyImg" src="images/placeimg_210_225_arch1.jpg" alt="study">
+                <!-- 
+                    The content is from:                    
+                    Lorem Ipsum: https://www.lipsum.com/feed/html
+                    -->
+                <p>Aenean iaculis urna ut massa faucibus, vitae aliquet urna eleifend. In hac habitasse platea dictumst. Integer aliquam, ex eget consectetur vulputate, lacus libero condimentum sem, et tincidunt nisi quam sed purus. Nullam euismod dolor ligula, vel vulputate lacus consectetur porttitor. Nulla erat velit, condimentum dapibus massa eget, ultrices malesuada augue. Morbi ac erat congue eros blandit iaculis. Suspendisse a mauris sapien.Sed faucibus malesuada egestas. Phasellus ut arcu nec nisi dignissim pulvinar dictum sit amet orci. </p>
+            </div>
+                       
+    </div>
+    <footer>
+        <p>&copy; Tiger Talks, Halifax, Nova Scotia.</p>
+    </footer>
+    <script src="scripts/responsive.js"></script> 
+</body>
+
+</html>

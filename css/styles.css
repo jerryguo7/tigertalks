@@ -1,0 +1,596 @@
+/*
+ * @student: Jerry Guo
+ * @B00779028
+ * @year: 2018
+ * @course: CSCI 1170: Intro to Web Design & Development
+ */
+
+/* 
+ * Set box sizing property to border-box;
+ * Set Calibri as main font
+ */
+* {
+    box-sizing: border-box;
+    font-family: Calibri, sans-serif
+}
+
+/* 
+ * Make sure there is no margin
+ */
+body {
+    margin: 0px;
+}
+
+header {
+    height: 100%;
+    width: 100%;
+    /* Background colour of header is the same as the backgournd colour of logo */
+    background-color: #cda30f;
+    overflow: auto;
+}
+
+/* 
+ * Navigation bar
+ */
+.navigation {
+    height: 100%;
+    /* Deep green background */
+    background-color: #1e3231;
+    overflow: auto;
+    float: left;
+    /* Make sure navigation bar in the full width */
+    width: 100%;
+}
+
+.navigation ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    /* The options of navigation bar are in the middle */
+    text-align: center;
+}
+
+.navigation ul li {
+    /* All the options are in a row */
+    display: inline;
+}
+
+.navigation ul li a {
+    padding: 4px 18px;
+    line-height: 36px;
+    vertical-align: middle;
+    /* Remove link underline decoration */
+    text-decoration: none;
+    /* Text colour is white */
+    color: white;
+}
+
+.navigation ul li a:hover {
+    /* Background colour of colour changes to brown when hover */
+    background-color: #bc5d2e;
+    color: white;
+}
+
+/* 
+ * Serach bar on the top side
+ */
+form {
+    float: left;
+    margin-top: 22px;
+    margin-bottom: 18px;
+}
+
+form input {
+    padding: 10px;
+    font-size: 17px;
+}
+
+form button {
+    float: left;
+    padding: 11px;
+    background-color: #1e3231;
+    color: white;
+    font-size: 17px;
+    /* Decorate border */
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    /* Consistent to the colour of navigation bar hover */
+    background: #bc5d2e;
+}
+
+/* 
+ * The footer has the same background colour as header,
+ * in the white italic font
+ */
+footer {
+    clear: left;
+    padding: 12px;
+    background-color: #cda30f;
+    overflow: auto;
+}
+
+footer p {
+    font-size: 100%;
+    font-style: italic;
+    color: white;
+}
+
+/* 
+ * Adjust the main post by article
+ */
+article {
+    padding: 18px;
+    overflow: auto;
+}
+
+article p {
+    padding-right: 10px;
+}
+
+/* 
+ * Adjust the useful links
+ */
+aside {
+    padding: 18px;
+}
+
+aside h2 {
+    font-size: 100%;
+}
+
+aside ul li a {
+    font-size: 100%;
+    padding-bottom: 18px;
+    color: black;
+}
+
+aside ul li a:hover {
+    /* Consistent to the colour of navigation bar hover */
+    color: #bc5d2e;
+}
+
+/*Language bar is on the right side*/
+.languages {
+    float: right;
+    background-color: #cda30f;
+    color: white;
+    margin-right: 80px;
+    margin-top: 20px;
+    margin-bottom: 3%;
+}
+
+.dropdown {
+    font-size: 16px;    
+    border: none;
+    cursor: pointer;
+    background-color: inherit;
+    font-family: Calibri;
+}
+
+.languages-options {
+    display: none;
+    position: absolute;
+    background-color: #eff1ed;
+    min-width: 120px;
+    text-align: center; /*Content should be at the center*/
+}
+
+.languages-options a {
+    padding: 5px 8px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.languages:hover .languages-options {
+    display: block;
+}
+
+.languages-options ul li {
+    display: inline;
+    padding-right: 18px;
+    line-height: 36px;
+    vertical-align: middle;
+}
+
+.languages-options ul li a {
+    color: black;
+    float: left;
+}
+
+.languages-options ul li a:hover {
+    color: #bc5d2e;
+}
+
+/* 
+ * Breadcrumb styles:
+ * All the content in a row
+ * Use > to seperate the content
+ * Colour change when hover
+ */
+.breadcrumb {
+    padding: 10px 16px;
+    list-style: none;
+    background-color: white;
+    margin-top: 4%;
+    margin-left: 20px;
+}
+
+.breadcrumb li {
+    display: inline;
+    font-size: 18px;
+}
+
+.breadcrumb li+li:before {
+    padding: 8px;
+    color: black;
+    content: ">";
+}
+
+.breadcrumb li a {
+    color: #0275d8;
+    /* Remove link underline decoration */
+    text-decoration: none;
+}
+
+.breadcrumb li a:hover {
+    color: #bc5d2e;
+    /* Add link underline decoration when hover */
+    text-decoration: underline;
+}
+
+/* Make sure no unnecessary white space */
+.main-container {
+    width: 100%;
+}
+
+/* Main post has the most width */
+.main-post {
+    width: 70%;
+    float: left;
+    margin-left: 16px;
+    margin-right: 5%;
+}
+
+/* 
+ * The rest of the posts have the half width
+ */
+.left-container {
+    width: 44%;
+    float: left;
+    margin-left: 33px;
+    margin-right: 2.5%;
+}
+
+.right-container {
+    width: 44%;
+    float: left;
+    margin-left: 2.5%;
+    margin-right: 33px;
+}
+
+
+/* 
+ * Colour change when hover
+ */
+.readMore {
+    color: #0275d8;
+    text-decoration: none;
+}
+
+.readMore:hover {
+    color: #bc5d2e;
+    text-decoration: underline;
+}
+
+/* Remove the size change of the email box */
+#feedback {
+    resize: none;
+}
+
+/* Make the logo suit the header */
+#logo {
+    float: left;
+    width: 247px;
+    height: 70px;
+    margin: 10px 10px 10px 10px;
+}
+
+/* 
+ * The image slider are on the right side
+ */
+#topImg {
+    width: 360px;
+    height: 240px;   
+    transition: 0.4s;
+    margin: 2%;
+}
+
+.blogImg {
+    float: right;
+    width: 360px;
+    height: 240px;
+    margin: 2%;
+}
+
+
+/* Button for switching the slides*/
+#imgBtn {    
+    float: right;
+}
+
+#leftBtn {
+    float: left;  
+    margin-left: 3%;
+}
+
+#rightBtn {
+    float: right; 
+    
+}
+
+.switchSlideBtn {
+    width: 10%;
+    padding: 5px;
+    background-color: #1e3231;
+    color: white;
+    font-size: 17px;
+    /* Decorate border */
+    border: none;
+    cursor: pointer;
+}
+
+.switchSlideBtn:hover {
+    /* Consistent to the colour of navigation bar hover */
+    background: #bc5d2e;
+}
+
+#studentsImg {
+    width: 210px;
+    height: 225px;
+    float: right;
+    padding: 0px 18px 18px 0px;
+}
+
+#studyImg {
+    width: 210px;
+    height: 225px;
+    float: right;
+    padding: 0px 18px 18px 12px;
+}
+
+#msgarea {
+    margin-left: 50%;
+    margin-bottom: 5%;
+    margin-top: 2%;
+    float: left;
+}
+
+#option ul li a{
+    text-decoration: none;
+}
+
+#submit {
+    font-family: Calibri;
+    float: left;
+    padding: 4px 25px;
+    border: none;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+#clear {
+    font-family: Calibri;
+    float: left;
+    padding: 4px 25px;
+    border: none;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+#search input{
+    /* Decorate border */
+    border: 1px solid white;
+    float: left;
+    width: 80%;
+    background: #f1f1f1;
+}
+
+#search button{
+    width: 20%;
+}
+
+/*Some conents are hidden in some specific break points*/
+.hidden {
+    display: none;
+}
+
+#drop-button {
+    display: none;
+}
+
+/*Button for expandable content section*/
+.expandable {
+    font-size: 16px;
+    background-color: #1e3231;
+    cursor: pointer;
+    padding: 12px;
+    width: 50%;
+    color: white;
+    border: none; /*Remove the border*/   
+}
+
+.expandable:hover {
+    background-color: #bc5d2e;
+    color: white;
+}
+
+/*Some conents display in some specific break points*/
+.display {
+    display: block;
+}
+
+.links {
+    float: right;
+    width: 23%;
+}
+
+.mobileNav {
+    display: none;
+}
+
+/*Tablet version*/
+@media screen and (max-width: 970px) {
+    .main-post {
+        width: 90%;
+        float: left;
+        margin-right: 2.5%;
+    }
+
+    .links {
+        float: left;
+        margin-left: 20%;
+        width: 100%;
+    }
+
+    .left-container {
+        width: 95%;
+        float: left;
+        margin-left: 5%;
+    }
+
+    .right-container {
+        margin-left: 5%;
+        width: 95%;
+        float: left;
+        
+    }
+
+    .left-about {
+        width: 95%;
+        float: left;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+    }  
+
+    .right-about {
+        width: 95%;
+        float: left;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+    }
+
+    #msgarea {
+        margin-left: 25%;
+        margin-bottom: 5%;
+        margin-top: 2%;
+        float: left;
+    }
+}
+
+/*Mobile version*/
+@media screen and (max-width: 675px) {
+    .navigation {
+        height: 100%;
+    }
+
+    #drop-button {
+        display: inline;
+        width: 100%;
+        font-family: Calibri;
+    }
+
+    .main-post {
+        width: 90%;
+        float: left;
+        margin-right: 2.5%;
+    }
+
+    .left-container {
+        width: 90%;
+        float: left;
+    }
+
+    .right-container {
+        width: 90%;
+        float: left;
+    }
+
+    .mobileNav {
+        display: inline;
+    }
+
+    .mobileNav ul {
+        margin: 0px;
+        background-color: #1e3231;
+        text-align: center;
+    }
+
+    .mobileNav ul li {
+        display: inline;
+        padding-right: 18px;
+        line-height: 36px;
+        vertical-align: middle;
+    }
+
+    .mobileNav ul li a {
+        padding: 4px 18px;
+        line-height: 36px;
+        vertical-align: middle;
+        color: white;
+        text-decoration: none;
+    }
+
+    .mobileNav ul li a:hover {
+        background-color: #bc5d2e;
+        color: white;
+    }
+
+    /*Hide the navigation of desktop/tablet version*/
+    .navigation {
+        display: none;
+    }
+
+    .links {
+        float: left;
+        margin-left: 20%;
+        width: 100%;
+    }
+
+    #msgarea {
+        margin-left: 10%;
+        margin-bottom: 5%;
+        margin-top: 2%;
+        float: left;
+    }
+}
+
+/*Further mobile version*/
+@media screen and (max-width: 575px) { 
+    .main-post {
+        width: 100%;
+        float: left;
+    }
+
+    .left-container {
+        width: 90%;
+        float: left;
+        margin-left: 5%;
+    }
+
+    .right-container {
+        width: 90%;
+        float: left;
+    }
+
+    #msgarea {
+        margin-left: 5%;
+        margin-bottom: 5%;
+        margin-top: 2%;
+        float: left;
+    }
+
+}
